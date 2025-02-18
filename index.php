@@ -3,6 +3,7 @@
 //</editor-fold desc="на всякий случай">
 ini_set("MEMORY_LIMIT", "128M");
 echo "<pre>";
+//</editor-fold>
 
 /* функция разделения для удобного чтения */
 function newTitle($number, $title)
@@ -100,10 +101,10 @@ function examination($matrix)
 {
     foreach ($matrix as $key => $value) {
         if (is_array($value)) {
-            echo "$key:\n"; // Выводим номер массива
-            examination($value); // Вызов самой себя
+            echo "$key:\n";
+            examination($value);
         } else {
-            echo "$key => $value\n"; // Выводим ключ и значение
+            echo "$key => $value\n";
         }
     }
 }
@@ -144,7 +145,7 @@ foreach ($data as $item) {
     echo "<br>";
 }
 
-newTitle(11,"abs(), sqrt(), round(), ceil(), floor()");
+newTitle(11, "abs(), sqrt(), round(), ceil(), floor()");
 
 $num = -9.7;
 echo "$num | abs: " . abs($num) . " | sqrt: " . sqrt(abs($num)) .
