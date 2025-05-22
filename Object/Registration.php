@@ -5,8 +5,8 @@ namespace Object;
 use ORM\ORM;
 use ORM\DTO;
 
-require_once __DIR__ . '/../ORM/ORM.php';
-require_once __DIR__ . '/../ORM/DTO.php';
+require_once '../ORM/ORM.php';
+require_once '../ORM/DTO.php';
 
 class Registration extends ORM
 {
