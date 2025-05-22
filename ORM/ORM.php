@@ -12,7 +12,7 @@ abstract class ORM
     public function __construct()
     {
         if (self::$db === null) {
-            self::$db = require_once __DIR__ . '/config.php'; // Возвращает PDO
+            self::$db = require_once 'config.php';
         }
     }
 

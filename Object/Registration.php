@@ -13,16 +13,15 @@ class Registration extends ORM
     public function __construct()
     {
         parent::__construct();
-        $this->setTable('users'); // имя таблицы, как в БД
+        $this->setTable('users');
     }
 
     public function register(DTO $dto): bool
     {
         $email = $dto->getEmail();
 
-        // Проверка: логин уже существует
         if ($this->findLogin($email)) {
-            return false; // пользователь уже есть
+            return false;
         }
 
         $password = password_hash($dto->getPassword(), PASSWORD_DEFAULT);

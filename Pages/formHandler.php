@@ -32,16 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
 
         case 'authorisation':
-            $dto = new DTO($login, $hash);
-            $auth = new Authorisation();
 
-            if ($auth->login($dto)) {
-                $_SESSION['user'] = $login;
-                header('Location: mycabinet.php');
-                exit;
-            } else {
-                echo "Неверный логин или пароль";
-            }
             break;
 
         default:
