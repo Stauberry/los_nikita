@@ -1,0 +1,5 @@
+.idea/
+.Interfaces/
+.Object/AbsUser.php
+.Object/Authorisation.php
+test.php
