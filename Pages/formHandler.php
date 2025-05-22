@@ -3,11 +3,11 @@ session_start();
 
 use ORM\DTO;
 use Object\Registration;
-use Object\Authorisation;
+//use Object\Authorisation;
 
-require_once __DIR__ . '/../ORM/DTO.php';
-require_once __DIR__ . '/../Object/Registration.php';
-require_once __DIR__ . '/../Object/Authorisation.php';
+require_once '../ORM/DTO.php';
+require_once '../Object/Registration.php';
+//require_once '../Object/Authorisation.php';
 
 
 $login = $_POST['login'] ?? '';
