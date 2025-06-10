@@ -1,7 +1,2 @@
 .idea/
-.Interfaces/
-Models/AbsUser.php
-.Controllers/MainController.php
-.Controllers/UserController.php
 .vendor/
-Services/UserStatus.php
