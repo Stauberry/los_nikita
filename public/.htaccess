@@ -1,0 +1,9 @@
+# public/.htaccess
+
+RewriteEngine On
+
+# Если запрошенный файл или папка не существует, направляем в index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [QSA,L]

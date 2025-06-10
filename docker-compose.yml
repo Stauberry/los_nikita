@@ -3,12 +3,13 @@ version: '3.8'
 services:
   php:
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
     ports:
       - "8000:80"
     volumes:
-      - ./www:/var/www/html
+      - ./:/var/www/html
+    working_dir: /var/www/html
     depends_on:
       - db
 
@@ -34,6 +35,7 @@ services:
       PMA_HOST: db
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: root
+      UPLOAD_LIMIT: 128M
 
 volumes:
   db_data:

@@ -1,5 +1,6 @@
 .idea/
 .Interfaces/
-.Object/AbsUser.php
-.Object/Authorisation.php
-test.php
+.app/Models/AbsUser.php
+.Controllers/MainController.php
+.Controllers/UserController.php
+.vendor/
