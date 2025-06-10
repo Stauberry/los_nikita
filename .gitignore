@@ -4,3 +4,4 @@
 .Controllers/MainController.php
 .Controllers/UserController.php
 .vendor/
+.app/Services/UserStatus.php
